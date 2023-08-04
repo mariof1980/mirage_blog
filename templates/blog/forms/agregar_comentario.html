@@ -1,0 +1,26 @@
+{% extends 'blog/articulo.html' %}
+{% load static %}
+
+
+{% block contenido %}
+
+    <section>
+        <h2>Crear Comentario</h2>
+        <form method='post' enctype='multipart/form-data'>
+            {% csrf_token %}
+            {{ form.as_p }}
+
+            <button class="btn btn-secondary">Agregar Comentario</button>
+
+        </form>
+    </section>
+
+    
+
+
+
+
+
+
+
+{% endblock contenido %}
